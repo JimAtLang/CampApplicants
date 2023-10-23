@@ -20,7 +20,7 @@ public class Ui {
     public Applicant getApplicant(){
         String first = inputString("what's the applicant's first name?");
         String last = inputString("What's the applicant's last name?");
-        int age = inputInt("What is the applicant's name?");
+        int age = inputInt("What is the applicant's age?");
         return new Applicant(first, last, age);
     }
 }
