@@ -14,9 +14,10 @@ public class Main {
             Applicant a = ui.getApplicant();
             Camper c = p.processApplicant(a);
             // part 2: put in a conditional that will print a more user-friendly response 
-            System.out.println(c.getType());
-            if(c!=null)
+             if(c!=null){
+                System.out.println(c.getType());
                 campers.add(c);
+            }
             String s = ui.inputString("Do you want to process another applicant?");
             if(Character.toLowerCase(s.charAt(0)) == 'y'){
                 next = true;
