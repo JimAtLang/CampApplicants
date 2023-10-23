@@ -12,6 +12,12 @@ public class ApplicantProcessor {
         if(applicant.getAge() >= 4 && applicant.getAge() <= 8){
             return "Sparrow";
         }
-        return null;
+        if(applicant.getAge() >= 9 && applicant.getAge() <= 13){
+            return "Robin";
+        }
+        if(applicant.getAge() >= 14 && applicant.getAge() <= 18){
+            return "Eagle";
+        }
+       return null;
     }
 }
