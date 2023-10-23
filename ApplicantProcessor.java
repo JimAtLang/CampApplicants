@@ -9,7 +9,18 @@ public class ApplicantProcessor {
      * for all other ages return null;
      */
     public String processApplicant(Applicant applicant){
-        // part 1: put in conditionals that will return the correct string as shown above
+        if(applicant.getAge() >= 4 && applicant.getAge() <= 8)
+        {
+            return "Sparrow";
+        }
+        if(applicant.getAge() >= 4 && applicant.getAge() <= 13)
+        {
+            return "Robin";
+        }
+        if(applicant.getAge() >= 4 && applicant.getAge() <= 18)
+        {
+            return "Eagle";
+        }
         return null;
     }
 }
