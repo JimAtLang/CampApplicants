@@ -9,9 +9,9 @@ public class Main {
         boolean next = true;
         while(next){
             Applicant a = ui.getApplicant();
-            String group = p.processApplicant(a);
+            Camper camper = p.processApplicant(a);
             // part 2: put in a conditional that will print a more user-friendly response 
-            System.out.println(group);
+            System.out.println(camper);
             String s = ui.inputString("Do you want to process another applicant?");
             if(Character.toLowerCase(s.charAt(0)) == 'y'){
                 next = true;

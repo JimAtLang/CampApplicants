@@ -8,18 +8,18 @@ public class ApplicantProcessor {
      * for applicants age 14-18 return "Eagle"
      * for all other ages return null;
      */
-    public String processApplicant(Applicant applicant){
+    public Camper processApplicant(Applicant applicant){
         if(applicant.getAge() >= 4 && applicant.getAge() <= 8)
         {
-            return "Sparrow";
+            return new Camper(applicant.getFirstName(), applicant.getLastName(), applicant.getAge(), "Sparrow");
         }
         if(applicant.getAge() >= 4 && applicant.getAge() <= 13)
         {
-            return "Robin";
+            return new Camper(applicant.getFirstName(), applicant.getLastName(), applicant.getAge(), "Robin");
         }
         if(applicant.getAge() >= 4 && applicant.getAge() <= 18)
         {
-            return "Eagle";
+            return new Camper(applicant.getFirstName(), applicant.getLastName(), applicant.getAge(), "Eagle");
         }
         return null;
     }
