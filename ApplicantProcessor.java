@@ -17,7 +17,7 @@ public class ApplicantProcessor {
         if(age >= 9 && age <= 13){
             return "Robin";
         }
-         if(age >= 14  age <= 18){
+         if(age >= 14 && age <= 18){
             return "Eagle";
         }
        
