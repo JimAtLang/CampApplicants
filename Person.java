@@ -1,4 +1,4 @@
-public class Camper {
+public class Person {
     private String firstName;
     private String lastName;
     private int age;
@@ -6,15 +6,6 @@ public class Camper {
     private boolean isProcessed;
 
     
-    public Camper(String firstName, String lastName, int age, String type) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.age = age;
-        this.type = type;
-        this.isProcessed = false;
-    }
-
-
     public String getFirstName() {
         return firstName;
     }
@@ -39,5 +30,12 @@ public class Camper {
     public void setType(String type) {
         this.type = type;
     }
+    public boolean isProcessed() {
+        return isProcessed;
+    }
+    public void setProcessed(boolean isProcessed) {
+        this.isProcessed = isProcessed;
+    }
 
+    
 }
