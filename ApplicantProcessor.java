@@ -9,6 +9,7 @@ public class ApplicantProcessor {
      * for all other ages return null;
      */
     public Camper processApplicant(Applicant applicant){
+        applicant.setProcessed(true);
         if(applicant.getAge() >= 4 && applicant.getAge() <= 8){
             return new Camper(applicant.getFirstName(), applicant.getLastName(), applicant.getAge(), "Sparrow");
         }
