@@ -9,7 +9,11 @@
             "name": "Main",
             "request": "launch",
             "mainClass": "Main",
+<<<<<<< HEAD
             "projectName": "CampApplicants_adac33b2"
+=======
+            "projectName": "CampApplicants_7449ad02"
+>>>>>>> 16e864fbfb08f7628b21e149ba4881f4b5681ac4
         },
         {
             "type": "java",
