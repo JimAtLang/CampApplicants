@@ -1,4 +1,4 @@
-public class Camper {
+public class Camper extends Person{
     private String firstName;
     private String lastName;
     private int age;
